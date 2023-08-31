@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cancionero de Nacho</title>
-    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css" type="text/css" />
 </head>
 <body>
-    <header class="header">
+    <header>
         <nav class="navbar" >
             <ul class="menu">
                 <li class="menu_item active">
@@ -19,26 +20,40 @@
             </ul>
         </nav>
     </header>
+    <div class="formulario_historial">
+        <div class="seccion_formulario">
+            <div class="titulo">
+                <h1> Bienvenidx al Cancionero de Nacho</h1>
+            </div>
+            <div class="contenedor_formulario">
+                <p class="pregunta">¿Qué canción te gustaría tocar hoy?</p>
+                <form class="formulario" id="formularioCancion" >
+                    <input type="text" class="input_cancion" id="valorCancion" >
+                    <button type="submit" class="input_boton"> Mostrar </button>
+                </form>
+            </div>
+        </div>
+        <div class="display_historial">
+            <div id="historialBusqueda" class="historial">
+                <p>Historial de búsqueda:</p>
+            </div>
+        </div>
+
+    </div>
+
 
     <main>
-        <div class="titulo">
-            <h1> Bienvenidx al Cancionero de Nacho</h1>
-        </div>
-        <div class="contenedor_formulario">
-            <p class="pregunta">¿Qué canción te gustaría tocar hoy?</p>
-            <form class="formulario" id="formularioCancion" >
-                <input type="text" class="input_cancion" id="valorCancion" >
-                <button type="submit" class="input_boton"> Mostrar </button>
-            </form>
-        </div>
-        <div id="historialBusqueda" class="historial">
-            <b>Historial de búsqueda:</b>
-        </div>
+        
         <button type="button" class="boton_acordes" id="botonSemitono"> + semitono </button>
         <div id="espacioCancion" class="espacio_cancion">
         </div>
     </main>
 
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.23/dist/sweetalert2.all.min.js"></script>
     <script src="srcipt.js"></script>
 </body>

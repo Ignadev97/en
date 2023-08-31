@@ -1,0 +1,145 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f1e667;
+}
+header .navbar {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+}
+header .navbar .menu {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  background-color: #551a1a;
+  border: solid;
+  border-color: #000;
+  border-radius: 25px;
+  display: flex;
+  gap: 15px;
+}
+header .navbar .menu .menu_item {
+  margin-inline: 15px;
+}
+
+.formulario_historial {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 3fr 0.5fr;
+}
+.formulario_historial .seccion_formulario {
+  background-color: #f1e667;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 200px;
+}
+.formulario_historial .seccion_formulario .titulo {
+  font-size: 25px;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 3px 3px 0.9px rgb(82, 82, 82);
+  background-color: #f1e667;
+  color: #000;
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.formulario_historial .seccion_formulario .contenedor_formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  background-color: #551a1a;
+  border: solid;
+  border-color: #000;
+  padding: 30px 30px 30px 30px;
+  margin: 30px;
+  align-items: center;
+  border-radius: 25px;
+}
+.formulario_historial .seccion_formulario .contenedor_formulario .pregunta {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  text-shadow: 3px 3px 2px rgba(189, 188, 188, 0.6);
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+.formulario_historial .seccion_formulario .contenedor_formulario .formulario {
+  display: flex;
+  justify-content: center;
+}
+.formulario_historial .seccion_formulario .contenedor_formulario .formulario .input_cancion {
+  text-align: center;
+  padding: 7px 25px 0 0;
+  align-items: center;
+  color: #000;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: outset;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+.formulario_historial .seccion_formulario .contenedor_formulario .formulario .input_boton {
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  border: outset;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 0 0 0 25px;
+  padding: 5px 10px 5px 10px;
+}
+.formulario_historial .display_historial {
+  background-color: #f1e667;
+}
+.formulario_historial .historial {
+  background-color: #fff;
+  border: solid;
+  border-color: #000;
+  border-radius: 10px;
+  text-align: center;
+}
+
+main {
+  background-color: #f1e667;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .boton_acordes {
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  border: outset;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 20px 0 20px 0px;
+  padding: 5px 10px 5px 10px;
+}
+main .espacio_cancion {
+  background-color: #fff;
+  border: solid;
+  border-color: #000;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px 120px 10px 80px;
+}
+main .parrafo_cancion {
+  font-weight: 900;
+  padding: 15px 0 0 15px;
+  line-height: 2;
+  font-size: 20px;
+  text-align: justify;
+  color: #551a1a;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}/*# sourceMappingURL=styles.css.map */

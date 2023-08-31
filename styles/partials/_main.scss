@@ -1,0 +1,34 @@
+main {
+        background-color:#f1e667;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    .boton_acordes {
+        background-color: #000;
+        color: #fff;
+        font-weight: 500;
+        border: outset;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        margin: 20px 0 20px 0px;
+        padding: 5px 10px 5px 10px;
+    }
+    .espacio_cancion {
+        background-color: #fff;
+        border: solid;
+        border-color: #000;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px 120px 10px 80px;
+    }
+    .parrafo_cancion {
+        font-weight: 900;
+        padding: 15px 0 0 15px;
+        line-height: 2;
+        font-size: 20px;
+        text-align: justify;
+        color: #551a1a;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }        
+}
