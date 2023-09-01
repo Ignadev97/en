@@ -60,18 +60,64 @@ async function verificarForm(e){
     }
 }
  //lógica cambio de notas (no lo pude concretar aún)
-// let posicionNota = 0;
+const notasMayores = {
+    'C': 'C#',
+    'C#': 'D',
+    'D': 'D#',
+    'D#': 'E',
+    'E': 'F',
+    'F': 'F#',
+    'F#': 'G',
+    'G': 'G#',
+    'G#': 'A',
+    'A': 'A#',
+    'A#': 'B',
+    'B': 'C',
+};
 
-// document.getElementById('botonSemitono').addEventListener('click', () => {
-//     posicionNota = (posicionNota +1) % notasMenores.length;
-//     console.log(posicionNota);
+const notasMenores = {
+    'Cm': 'C#m',
+    'C#m': 'Dm',
+    'Dm': 'D#m',
+    'D#m': 'Em',
+    'Em': 'Fm',
+    'Fm': 'F#m',
+    'F#m': 'Gm',
+    'Gm': 'G#m',
+    'G#m': 'Am',
+    'Am': 'A#m',
+    'A#m': 'Bm',
+    'Bm': 'Cm',
+};
 
-//     const actualizaLetra = document.getElementById('espacioCancion');
-//     actualizaLetra.innerHTML = actualizaLetra.innerHTML.replace(
-//         `<b>${notasMenores[(posicionNota - 1 + notasMenores.length) % notasMenores.length]}</b>`,
-//         `<b>${notasMenores[posicionNota]}</b>`
-//     );
-// })
+
+
+document.getElementById('botonSemitono').addEventListener('click', () => {
+   const tomandoNotas = document.querySelectorAll('b');
+   // console.log(tomandoNotas[0].textContent);
+
+   tomandoNotas.forEach(function(elemento){ 
+    
+    const contenidoActual = elemento.textContent; 
+                                            
+                        
+      if (notasMayores.hasOwnProperty(contenidoActual)) {
+        // Cambia el contenido por la nota modificada
+        elemento.textContent = notasMayores[contenidoActual];
+      } else {
+        // Si la nota actual no se encuentra en el objeto, no la modifica
+        console.log("Nota no encontrada: " + contenidoActual);
+      };
+      
+      if (notasMenores.hasOwnProperty(contenidoActual)) {
+        // Cambia el contenido por la nota modificada
+        elemento.textContent = notasMenores[contenidoActual];
+      } else {
+        // Si la nota actual no se encuentra en el objeto, no la modifica
+        console.log("Nota no encontrada: " + contenidoActual);
+      };  
+    })
+});
 
     // historial de búsqueda
 document.getElementById('formularioCancion').addEventListener('submit' , function (ev){
