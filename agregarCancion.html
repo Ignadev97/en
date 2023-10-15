@@ -10,12 +10,6 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <div class="input_div">
-                <form class="input_texto" for="input_texto" id="formularioCancion">
-                    <input type="text" name="input_texto" id="valorCancion" >
-                    <input type="submit" value="buscar">    
-                </form>
-            </div>
             <ul class="menu">
                 <li class="menu_item">
                     <a href="inicio.html"> Inicio </a>
@@ -29,24 +23,24 @@
             </ul>
         </nav>
     </header>
-    <main class="contenedor">
-        <div class="caja caja1" id="espacioArtista">
-            ARTISTA
-        </div>
-        <div class="caja caja2" id="espacioYt">
-            <img src="./styles/imagenes/youtube-removebg-preview.png" alt="youtube" class="imgSP">
-        </div>
-        <div class="caja caja3" id="espacioSp">
-            <img src="./styles/imagenes/spotify-removebg-preview(1).png" class="imgSP" alt="Spotify">
-        </div>
-        <div class="caja caja4" id="historialBusqueda">
-            Historial de búsqueda:
-        </div>
-        <div class="caja5">
-            <button id="botonSemitono" class="btn_semitono"> + Semitono </button>
-            <div id="espacioCancion" class="div_cancion">
+    <main class="contenedor contenedor_agregar_cancion">
+            <div class="caja caja1" id="espacioArtista">
+                <h1> ¿Qué canción te gustaria agregar a la base de datos?</h1>
             </div>
-        </div>
+            <div class="caja caja2">
+                <form class="formulario" id="formularioAgegarCancion" >
+                    <label for="nombreArtista"> Artista
+                        <input type="text" class="input_cancion" id="nombreArtista" >
+                    </label>
+                    <label for="nombreCancion"> Canción
+                        <input type="text" class="input_cancion" id="nombreCancion" >
+                    </label>
+                    <label for="letraCancion"> Letra
+                        <input type="textarea" class="input_cancion" id="letraCancion" >
+                    </label>
+                    <button type="submit" class="input_boton"> Agregar </button>
+                </form>
+            </div>   
     </main>
     <footer>
         <div>
@@ -65,9 +59,20 @@
               </svg>
         </div>
     </footer>
-    <script src="srcipt.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
-    
-
+    <script src="srcipt.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
